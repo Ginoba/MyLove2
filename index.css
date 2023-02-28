@@ -10,6 +10,7 @@ body  {
 
 .giftcontainer {
   position: relative;
+  right: 80px;
 }
 
 .giftcontainer:before {
