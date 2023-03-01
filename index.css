@@ -88,22 +88,174 @@ body  {
 }
 
 #click:checked+.click {
-  transform: rotate(-110deg) scale(0.85);
+  transform: rotate(-10deg) scale(0.85);
 }
 
-/* #click:checked~.whishes {
-  transform: translateY(-120px);
+#click:checked~.btn span {
+  transform: translateY(0px);
+}
+
+/* .inactive {
+  display: none;
 } */
 
-.whishes {
-  position: absolute;
-  transition: .5s;
-  color: black;
-  font-size: 30px;
-  text-transform: capitalize;
-  text-align: center;
-  z-index: -1;
-  left: 10px;
-  color: white;
-  text-shadow: 0 0 10px #020202;
+.anim {
+  animation: moving 0.5s linear reverse forwards;
 }
+
+@keyframes moving {
+  0% {
+    transform: scale(0);
+  }
+
+  10% {
+    transform: scale(1);
+  }
+
+  100% {
+    top: 50%;
+    left: 50%;
+  }
+}
+
+/* .hero {
+  width: 160px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* .btn {
+  display: inline-block;
+  font-size: 18px;
+  padding: 0px 60px;
+  background: transparent;
+  color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  bottom: 0px;
+  right: 10px;
+  z-index: 2;
+} */
+
+.btn span {
+  position: absolute;
+  border: 1px solid #ff1876;
+  background: #ff1876;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  z-index: -1;
+  transform: scale(1);
+  bottom: 100px;
+}
+
+.btn span:nth-child(1) {
+  top: -20%;
+  left: -10%;
+}
+
+.btn span:nth-child(2) {
+  top: -130%;
+  left: 0%;
+}
+.btn span:nth-child(3) {
+  top: -50%;
+  left: 10%;
+  background: transparent;
+}
+.btn span:nth-child(4) {
+  top: -66%;
+  left: 20%;
+}
+.btn span:nth-child(5) {
+  top: -90%;
+  left: 28%;
+}
+.btn span:nth-child(6) {
+  top: -70%;
+  left: 42%;
+}
+.btn span:nth-child(7) {
+  top: -80%;
+  left: 60%;
+  background: transparent;
+}
+.btn span:nth-child(8) {
+  top: -50%;
+  left: 70%;
+}
+.btn span:nth-child(9) {
+  top: -120%;
+  left: 80%;
+}
+.btn span:nth-child(10) {
+  top: -70%;
+  left: 90%;
+}
+.btn span:nth-child(11) {
+  top: -80%;
+  left: 100%;
+  background: transparent;
+}
+.btn span:nth-child(12) {
+  top: -50%;
+  left: 110%;
+  background: transparent;
+}
+.btn span:nth-child(13) {
+  top: 40%;
+  left: -20%;
+}
+.btn span:nth-child(14) {
+  top: 60%;
+  left: 120%;
+  background: transparent;
+}
+.btn span:nth-child(15) {
+  top: 160%;
+  left: -10%;
+}
+.btn span:nth-child(16) {
+  top: 120%;
+  left: 5%;
+  background: transparent;
+}
+.btn span:nth-child(17) {
+  top: 180%;
+  left: 10%;
+}
+.btn span:nth-child(18) {
+  top: 130%;
+  left: 20%;
+}
+.btn span:nth-child(19) {
+  top: 180%;
+  left: 33%;
+  background: transparent;
+}
+.btn span:nth-child(20) {
+  top: 180%;
+  left: 55%;
+}
+.btn span:nth-child(21) {
+  top: 160%;
+  left: 75%;
+}
+.btn span:nth-child(22) {
+  top: 130%;
+  left: 88%;
+  background: transparent;
+}
+.btn span:nth-child(23) {
+  top: 140%;
+  left: 100%;
+}
+.btn span:nth-child(24) {
+  top: 190%;
+  left: 120%;
+}
+
